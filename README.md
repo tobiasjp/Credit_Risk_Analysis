@@ -25,7 +25,7 @@ Given a dataset with 66,000+ examples, it was important to test multiple scenari
 In our first model, we used a Random Oversampling method from the imblearn module.  When considering the same of our data, we can see that the number of good applicants signifcantly outways the number of bad applicants.  In this case, we want to balance our model in order to determine achieve a higher degree of accuracy in the model, otherwise the model will perform well with an imbalance, which is likely a false result. After sampling the data, we trained the model with Logistic Regression to predict the outcomes of good applicants vs bad applicants from this data.  Using this model, we found:
 
   - A balanced accuracy score of approximately 65%.  This model was able to predict true positives 65% of the time.  
-  - This model was sensity to accurately predicting high_risk and low_risk applicants.
+  - This model was sensitive to accurately predicting high_risk and low_risk applicants.
 
 
 ### SMOTE Oversampling
@@ -33,7 +33,7 @@ In our first model, we used a Random Oversampling method from the imblearn modul
 In our second model, we used a synthetic minority oversampling technique (SMOTE).  In this model, the minority class (bad loan applicants) is increased to the size of the majority class and tested.  After sampling the data using SMOTE, we trained the model with Logistic Regression to predict the outcomes from this data.  Using this model we found:
 
   - A balanced accuracy score of approximately 65% as well.  This model model was able to predict true positives 65% of the time.  
-  - 
+  - This model was also sensitive to accurately predicting high_risk and low_risk applicants.  
 
 ### Undersampling
 
